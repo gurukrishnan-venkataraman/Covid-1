@@ -1,3 +1,15 @@
+#This modified version will check for available vaccination slots every minute and alert you with a ringtone
+
+#Note: There could be some delay of updation of data in the backend systems from which this script is pulling the data
+
+#*************Configuration***************************
+numdays=14 # No. of days to monitor from today
+dist_inp='Chennai' # refer district_mapping.csv for exact district name
+age_limit=18 #put age_limit = 18 or age_limit = 45 or age_limit='' (for both)
+vaccine_type = '' #('COVAXIN'/'COVISHIELD'/'')
+ringtone='tune.mp3'
+#*****************************************************
+
 import datetime
 import json
 import numpy as np
@@ -54,8 +66,6 @@ unique_districts = list(mapping_df["district name"].unique())
 unique_districts.sort()
 
 
-numdays=14
-dist_inp='Chennai'
 DIST_ID = mapping_dict[dist_inp]
 
 base = datetime.datetime.today()
@@ -95,7 +105,10 @@ while(run_ind<(hours_to_run*3600)):
     if (final_df is not None) and (final_df.size>0):
         final_df.drop_duplicates(inplace=True)
         final_df.rename(columns=rename_mapping, inplace=True)
-        final_df = filter_column(final_df, "Minimum Age Limit", 18)
+        if age_limit!='':
+            final_df = filter_column(final_df, "Minimum Age Limit", age_limit)
+        if vaccine_type!='':
+            final_df = filter_column(final_df, "Vaccine", vaccine_type)
         final_df = filter_capacity(final_df, "Available Capacity", 0)
 
 
@@ -110,7 +123,9 @@ while(run_ind<(hours_to_run*3600)):
             st.table(table)
             len=final_df.size
             if(len>0):
-                playsound('D:/Software/tune.mp3')
+                playsound(ringtone)
+                playsound(ringtone)
+                playsound(ringtone)
         else:
             st.error(error)
     time.sleep(sleep_time)

@@ -1,17 +1,13 @@
 # CoWIN vaccination slot availability using Python
 
 Script to check the available slots for Covid-19 Vaccination Centers from CoWIN API in India. This CANNOT book slots automatically. The Indian Government had blocked the API for crawlers, but we are good to go.
+This is modified from the Github https://github.com/bhattbhavesh91/cowin-vaccination-slot-availability/
 
 [Click to view the Website](https://bit.ly/3eQkvgl)
 
 <!---
 [Click to view the Website](https://bit.ly/3ob9l94)
 -->
-
-The [CoWin API](https://apisetu.gov.in/public/marketplace/api/cowin) currently states : "Further, these APIs are subject to a rate limit of 100 API calls per 5 minutes per IP".
-&nbsp;
-# Update
-I am humbled to see the overwhelming response that this project has received so far. Feel free to create amazing applications on top of this project. Due to my schedule, I won't be able to allot more time to this project. So there won't be any additional commits to this project.
 
 # Installing Python
 Python is a programming language that is powerful but easy to learn. It is free, platform-independent, and popular among scientists.
@@ -39,13 +35,13 @@ If `Anaconda` doesn't appear on the first line, you are using a different versio
 4. Click `New Notebook`, which should open a new page.
 
 # Usage
-- Clone the repository. using `! Git Clone https://github.com/bhattbhavesh91/cowin-vaccination-slot-availability.git `
+- Clone the repository. using `! Git Clone https://github.com/gurukrishnan-venkataraman/Covid-1`
 - The tool only works with Indian IP addresses so disconnect your VPN if needed.
 - Enter the command - `cd cowin-vaccination-slot-availability/`
 - Install all the dependencies - `! pip3 install -r requirements.txt`
 - Run Anaconda Promt (Run as Administrator) From Start Menu.
-- Go to your Directory Eg `cd C:\Users\lenovo\Desktop\Jupyter Notebooks\2021\Cowin\cowin-vaccination-slot-availability`
-- Run `streamlit run app.py`
+- Go to your Directory Eg `cd C:\Users\lenovo\Desktop\Jupyter Notebooks\2021\Cowin\Covid-1`
+- Run `streamlit run app2.py`. This version will alert you for open slots by a ringtone. If you need the Original version, Run `streamlit run app.py`
 
 -   You can now view your Streamlit app in your browser.
 
@@ -71,12 +67,3 @@ If `Anaconda` doesn't appear on the first line, you are using a different versio
 or click on the image below
 
 [![Python Script to Track Available Slots For Covid-19 Vaccinations in India](http://img.youtube.com/vi/tZ2xA19ZALA/0.jpg)](http://www.youtube.com/watch?v=tZ2xA19ZALA)
-
-### Want to know more about me?
-## Follow Me
-<a href="https://twitter.com/_bhaveshbhatt" target="_blank"><img class="ai-subscribed-social-icon" src="https://bhattbhavesh91.github.io/assets/images/tw.png" width="30"></a>
-<a href="https://www.youtube.com/bhaveshbhatt8791/" target="_blank"><img class="ai-subscribed-social-icon" src="https://bhattbhavesh91.github.io/assets/images/ytb.png" width="30"></a>
-<a href="https://www.youtube.com/PythonTricks/" target="_blank"><img class="ai-subscribed-social-icon" src="https://bhattbhavesh91.github.io/assets/images/python_logo.png" width="30"></a>
-<a href="https://github.com/bhattbhavesh91" target="_blank"><img class="ai-subscribed-social-icon" src="https://bhattbhavesh91.github.io/assets/images/gthb.png" width="30"></a>
-<a href="https://www.linkedin.com/in/bhattbhavesh91/" target="_blank"><img class="ai-subscribed-social-icon" src="https://bhattbhavesh91.github.io/assets/images/lnkdn.png" width="30"></a>
-
