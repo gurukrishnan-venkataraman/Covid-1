@@ -38,7 +38,19 @@ If `Anaconda` doesn't appear on the first line, you are using a different versio
 - Clone the repository. using `! Git Clone https://github.com/gurukrishnan-venkataraman/Covid-1`
 - The tool only works with Indian IP addresses so disconnect your VPN if needed.
 - Enter the command - `cd cowin-vaccination-slot-availability/`
-- Install all the dependencies - `! pip3 install -r requirements.txt`
+- Install all the dependencies - `! pip3 install -r requirements.txt
+- Open explorer and go to your directory eg.  C:\Users\lenovo\Desktop\Jupyter Notebooks\2021\Cowin\Covid-1
+- Open app2.py file in notepad++ or any editor
+- Change the below configurations to suit your needs  and save the file
+
+	#*************Configuration***************************
+	numdays=14 # No. of days to monitor from today
+	dist_inp='Chennai' # refer district_mapping.csv for exact district name
+	age_limit=18 #put age_limit = 18 or age_limit = 45 or age_limit='' (for both)
+	vaccine_type = '' #('COVAXIN'/'COVISHIELD'/'')
+	ringtone='tune.mp3'
+	#*****************************************************
+
 - Run Anaconda Promt (Run as Administrator) From Start Menu.
 - Go to your Directory Eg `cd C:\Users\lenovo\Desktop\Jupyter Notebooks\2021\Cowin\Covid-1`
 - Run `streamlit run app2.py`. This version will alert you for open slots by a ringtone. If you need the Original version, Run `streamlit run app.py`
