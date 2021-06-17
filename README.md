@@ -40,7 +40,7 @@ If `Anaconda` doesn't appear on the first line, you are using a different versio
 - Enter the command - `cd cowin-vaccination-slot-availability/`
 - Install all the dependencies - `! pip3 install -r requirements.txt
 - Open explorer and go to your directory eg.  C:\Users\lenovo\Desktop\Jupyter Notebooks\2021\Cowin\Covid-1
-- Open app2.py file in notepad++ or any editor
+- Open App3.py file in notepad++ or any editor
 - Change the below configurations to suit your needs  and save the file
 
 	#*************Configuration***************************
@@ -48,6 +48,7 @@ If `Anaconda` doesn't appear on the first line, you are using a different versio
 	dist_inp='Chennai' # refer district_mapping.csv for exact district name
 	age_limit=18 #put age_limit = 18 or age_limit = 45 or age_limit='' (for both)
 	vaccine_type = '' #('COVAXIN'/'COVISHIELD'/'')
+	Dose = 2 #(0-both,1=1st only, 2-2nd only)
 	ringtone='tune.mp3'
 	#*****************************************************
 

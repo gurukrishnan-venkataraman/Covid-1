@@ -7,7 +7,7 @@ numdays=14 # No. of days to monitor from today
 dist_inp='Chennai' # refer district_mapping.csv for exact district name
 age_limit=18 #put age_limit = 18 or age_limit = 45 or age_limit='' (for both)
 vaccine_type = 'COVAXIN' #('COVAXIN'/'COVISHIELD'/'')
-Dose = 2 #(0-both,1=1st only, 2-2nd only)
+Dose = 0 #(0-both,1=1st only, 2-2nd only)
 ringtone='tune.mp3'
 #*****************************************************
 
