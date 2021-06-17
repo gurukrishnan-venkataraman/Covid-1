@@ -43,14 +43,14 @@ If `Anaconda` doesn't appear on the first line, you are using a different versio
 - Open App3.py file in notepad++ or any editor
 - Change the below configurations to suit your needs  and save the file
 
-# *************Configuration***************************
+# Configuration
 - numdays=14 # No. of days to monitor from today
 - dist_inp='Chennai' # refer district_mapping.csv for exact district name
 - age_limit=18 #put age_limit = 18 or age_limit = 45 or age_limit='' (for both)
 - vaccine_type = '' #('COVAXIN'/'COVISHIELD'/'')
 - Dose = 0 #(0-both,1=1st only, 2-2nd only)
 - ringtone='tune.mp3'
-# *****************************************************
+# 
 
 - Run Anaconda Promt (Run as Administrator) From Start Menu.
 - Go to your Directory Eg `cd C:\Users\lenovo\Desktop\Jupyter Notebooks\2021\Cowin\Covid-1`
